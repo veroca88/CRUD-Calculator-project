@@ -10,7 +10,7 @@ const userSchema = new Schema(
       required: [true, 'Username must be unique!'],
       unique: true,
     },
-    passwordHash: {
+    password: {
       type: String,
     }
   }

@@ -7,6 +7,7 @@ const favicon = require('serve-favicon');
 const hbs = require('hbs');
 const logger = require('morgan');
 const path = require('path');
+const mongoose = require('mongoose')
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
@@ -33,6 +34,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.use('/', require('./routes/index'));
 app.use('/', require('./routes/users'));
 app.use('/', require('./routes/auth-routes/signup'));
+app.use('/', require('./routes/main-route/my-calculator'));
 
 
 module.exports = app;
