@@ -1,19 +1,22 @@
 <form class="container" novalidate="" action="/echo" method="POST" id="myForm">
     <div class="form-group">
-        <label class="form-control-label" for="inputSuccess1">Enter some input</label>
-        <input type="text" class="form-control" name="i1" id="inputSuccess1" required>
+        <label class="form-control-label" for="inputSuccess1">Username</label>
+        <input type="text" class="form-control" name="username" id="inputSuccess1" required>
         <div class="valid-feedback">Success! You've done it.</div>
         <div class="invalid-feedback">No, you missed this one.</div>
     </div>
-    <div class="form-group">
-        <label class="form-control-label" for="inputSuccess2">Enter some input</label>
-        <input type="text" class="form-control" name="i2" required id="inputSuccess2">
-    <div class="valid-feedback">Nice! You got this one!</div>
-        <div class="invalid-feedback">Sorry, you missed this one.</div>
+     <div class="form-group">
+        <label class="h4 form-control-label" for="inputSuccess2">Phone<abbr class="text-danger" title="This is required">*</abbr></label>
+        <input type="email" placeholder="email@email.com" class="form-control" name="email" id="inputSuccess1" required>
+        <div class="valid-feedback">Email looks good</div>
+        <div class="invalid-feedback">Please enter a correct email. This field is required.</div>
     </div>
+   
     <div>
     <button type="submit" class="btn btn-secondary" id="btnSubmit">Try It!</button>
     </div>
 </form>
 
 <script src="/javascripts/validation-signup-form.js" ></script>
+
+
